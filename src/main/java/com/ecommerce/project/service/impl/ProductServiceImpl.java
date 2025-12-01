@@ -7,7 +7,7 @@ import com.ecommerce.project.model.Product;
 import com.ecommerce.project.payload.ProductDTO;
 import com.ecommerce.project.payload.ProductResponse;
 import com.ecommerce.project.repositories.CategoryRepository;
-import com.ecommerce.project.repositories.ProductRepositor;
+import com.ecommerce.project.repositories.ProductRepository;
 import com.ecommerce.project.service.FileService;
 import com.ecommerce.project.service.ProductService;
 import org.modelmapper.ModelMapper;
@@ -27,7 +27,7 @@ import java.util.List;
 public class ProductServiceImpl implements ProductService {
 
     @Autowired
-    private ProductRepositor productRepository;
+    private ProductRepository productRepository;
 
     @Autowired
     private CategoryRepository categoryRepository;
